@@ -12,13 +12,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/opkona/device.mk)
 
 # Inherit some common yaap stuff.
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-PRODUCT_NAME := yaap_opkona
+PRODUCT_NAME := aosp_opkona
 PRODUCT_DEVICE := opkona
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := LE2101
+
+# PEX Stuff
+PEX_BUILD_TYPE := UNOFFICIAL
+PEX_MAINTAINER := Nacho
 
 PRODUCT_SYSTEM_NAME := OnePlus9R
 PRODUCT_SYSTEM_DEVICE := OnePlus9R
