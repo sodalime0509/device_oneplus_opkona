@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/yaap_opkona.mk
+    $(LOCAL_DIR)/aosp_opkona.mk
 
 COMMON_LUNCH_CHOICES := \
-    yaap_opkona-user \
-    yaap_opkona-userdebug \
-    yaap_opkona-eng
+    aosp_opkona-user \
+    aosp_opkona-userdebug \
+    aosp_opkona-eng
